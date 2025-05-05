@@ -4,3 +4,10 @@ on:
     types: [opened]
 permissions:
   pull-requests: write
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: UPC
+        run: echo "Thanks for opening this pull request, and waos"
